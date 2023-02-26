@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsFillFileArrowDownFill } from 'react-icons/bs';
+
 import second from '../assets/heroImage.jpg';
 import { Link } from 'react-scroll';
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div name="home" className=' h-full  w-full  bg-slate-600  '>
             <div className='max-w-screen-lg  mx-auto flex flex-col items-center justify-center h-full  px-4 md:flex-row '>
                 <div className='flex flex-col justify-center h-screen w-screen px-6'>
+                    <h1 style={{ color: "rgb(244 63 94)", fontFamily: "cursive" }} className='text-5xl pb-6 max-w-md  sm:text-6xl font-bold'>Hello,👋</h1>
                     <h2 className='text-5xl max-w-md  sm:text-5xl font-bold text-white'>
                         I am a Full Stack Developer
                     </h2>

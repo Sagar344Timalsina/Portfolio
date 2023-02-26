@@ -3,7 +3,6 @@ import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
-import tailwind from "../assets/tailwind.png";
 import flutter from "../assets/flutter.png";
 
 const FrontEnd = () => {
@@ -58,7 +57,7 @@ const FrontEnd = () => {
       {
         frontEnd.map(({ id, src, title, style }) => (
 
-          <div key={id} className={"shadow-xl hover:scale-105 duration-500 py-2 rounded-lg"+" "+style}>
+          <div key={id} className={`shadow-xl hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
             <img src={src} className="w-20 h-25 mx-auto" alt={title} />
             <p className='mt-4 font-bold'>{title}</p>
           </div>

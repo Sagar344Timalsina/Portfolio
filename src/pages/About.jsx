@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import { TbFiles } from 'react-icons/tb';
+// import { GrContactInfo } from 'react-icons/gr';
 
 const About = () => {
     return (
@@ -10,36 +12,21 @@ const About = () => {
                         About Me
                     </p>
                 </div>
-                <p className='text-xl mt-20'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Explicabo hic, incidunt ab obcaecati in aut voluptatem porro
-                    saepe neque officia repellat, nobis dolor natus dolore
-                    reiciendis est quas eos ipsam?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta officiis eum at atque. Voluptas delectus saepe dolores
-                    dolore a magni vel hic itaque
-                    rem labore odio deleniti ducimus ab excepturi fuga, aut vitae optio
-                    nostrum aliquam numquam velit voluptatem consequatur esse.
-                    Beatae quis, recusandae eveniet ratione deleniti id adipisci
-                    minus?
-
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta officiis eum at atque. Voluptas delectus saepe dolores
-                    dolore a magni vel hic itaque
-                    rem labore odio deleniti ducimus ab excepturi fuga, aut vitae optio
-                    nostrum aliquam numquam velit voluptatem consequatur esse.
-                    Beatae quis, recusandae eveniet ratione deleniti id adipisci
-                    minus?
+                <p className='text-xl '>
+                    Hello, I am <span style={{ color: "rgb(244 63 94)", fontFamily: "cursive" }}>Sagar Timalsina </span>and I am currently interested at frontend development.
+                    Although I have knowledge of different programming language including backend.
+                </p>
+                <p className='text-xl mt-6'>
+                    If you review my CV you get know about my educational background and how <span style={{ color: "rgb(244 63 94)", fontFamily: "cursive" }}>enegetic</span >, <span style={{ color: "rgb(244 63 94)", fontFamily: "cursive" }}>creative </span>and
+                    <span style={{ color: "rgb(244 63 94) ", fontFamily: "cursive" }}> hardworking</span>  person I am through different projects I have done.I am quiet observant,honest and <span style={{ color: "rgb(244 63 94)", fontFamily: "cursive" }}>Anti-social extrovert</span> type of guy.
                 </p>
                 <br />
-                <p className='text-xl'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Explicabo hic, incidunt ab obcaecati in aut voluptatem porro
-                    saepe neque officia repellat, nobis dolor natus dolore
-                    reiciendis est quas eos ipsam?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta officiis eum at atque.
+                <p className='text-xl '>
+                    I like to watch <span style={{ color: "rgb(244 63 94) ", fontFamily: "cursive" }}>Movies</span> and listen to <span style={{ color: "rgb(244 63 94) ", fontFamily: "cursive" }}>Music</span> some of my favourite genres in Movies are Horror, Thriller, Psychological, Mystery and Comedy.In Music I love to listen Pop, Rap, little bit of Metal and Rock too.
+                    I am very much fond of different gadgets that launch in the market and the technologies they use.
+
                 </p>
+                <br />
                 <div  >
 
                     <button className='cursor-pointer text-white w-fit rounded-md px-6 my-8 py-4 flex items-center bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-500 border border-spacing-1 '>
@@ -48,11 +35,20 @@ const About = () => {
                             target='_blank'
                             rel='noreferrer'
                         >
-                            <span className='text-2xl'>Download CV</span>
-                            <TbFiles size={30} />
+                            <div className='flex items-center justify-evenly'>
+
+                                <span className='text-xl pr-3'>Download CV</span>
+                                <TbFiles size={20} />
+                            </div>
                         </a>
 
                     </button>
+                    <button className='cursor-pointer text-white w-fit rounded-md px-6 my-8 py-4 flex items-center bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-500 border border-spacing-1 ' ><Link to="contact" smooth duration={500}>
+                        <div className='flex items-center  justify-evenly'>
+                            <span className=' text-xl'>Contact Me</span>
+                            {/* <GrContactInfo style={{color:"white"}} className='text-white' size={20}/> */}
+                        </div>
+                    </Link></button>
                 </div>
             </div>
         </div>

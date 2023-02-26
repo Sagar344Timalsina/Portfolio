@@ -54,7 +54,7 @@ const BackEnd = () => {
     {
       backEnd.map(({ id, src, title, style }) => (
 
-        <div key={id} className={"shadow-xl hover:scale-105 duration-500 py-2 rounded-lg"+" "+style}>
+        <div key={id} className={`shadow-xl hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
           <img src={src} className="w-20 h-25 mx-auto" alt={title} />
           <p className='mt-4 font-bold'>{title}</p>
         </div>

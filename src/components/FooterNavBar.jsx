@@ -40,12 +40,12 @@ const FooterNavBar = () => {
                         Menus.map((menu, i) => (
 
                             <li key={i} className='w-[4rem] px-4 py-3 flex justify text-center items-center ' >
-                               
-                                    <Link to={menu.link} duration={500} smooth className='flex flex-col text-center pt-6 ' onClick={() => setActive(i)}>
-                                        <span className={`text-xl flex justify-center pb-2 cursor-pointer duration-500  z-10 ${active === i && '-mt-6'}`}><menu.Icon /></span>
-                                        <span className={`text-[15px]  capitalize ${active === i ? `translate-y-2 duration-700 opacity-100 ${<Link to={active.link} duration={800} smooth  />}` : "opacity-0 translate-y-10"}`}>{menu.name}</span>
-                                    </Link>
-                                
+
+                                <Link to={menu.link ||'/'} duration={500} smooth className='flex flex-col text-center pt-6 ' onClick={() => setActive(i)}>
+                                    <span className={`text-xl flex justify-center pb-2 cursor-pointer duration-500  z-10 ${active === i && '-mt-6'}`}><menu.Icon /></span>
+                                    <span className={`text-[15px]  capitalize ${active === i ? `translate-y-2 duration-700 opacity-100 ${<Link to={active.link} duration={800} smooth />}` : "opacity-0 translate-y-10"}`}>{menu.name}</span>
+                                </Link>
+
                             </li>
 
                         ))
