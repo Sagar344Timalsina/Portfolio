@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { TbFiles } from 'react-icons/tb';
+import Education from '../components/Education';
 // import { GrContactInfo } from 'react-icons/gr';
 
 const About = () => {
@@ -43,13 +44,17 @@ const About = () => {
                         </a>
 
                     </button>
+                    <div className="education">
+                        <Education />
+                    </div>
                     <button className='cursor-pointer text-white w-fit rounded-md px-6 my-8 py-4 flex items-center bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-500 border border-spacing-1 ' ><Link to="contact" smooth duration={500}>
                         <div className='flex items-center  justify-evenly'>
-                            <span className=' text-xl'>Contact Me</span>
+                            <span className=' text-xl'>Hire Me</span>
                             {/* <GrContactInfo style={{color:"white"}} className='text-white' size={20}/> */}
                         </div>
                     </Link></button>
                 </div>
+
             </div>
         </div>
     )

@@ -1,9 +1,9 @@
 import React from 'react'
 import rocksissorpaper from '../assets/portfolio/RockSissorPaper.png';
-import installNode from '../assets/portfolio/installNode.jpg';
-import navbar from '../assets/portfolio/navbar.jpg';
-import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
-import reactWeather from '../assets/portfolio/reactWeather.jpg';
+
+import Flutter from '../assets/FlutterInside1.png';
+import Grocery from '../assets/GroceryEKhata.png';
+
 
 
 const Portfolio = () => {
@@ -16,24 +16,17 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: installNode
+      src: Flutter,
+      demo: "https://drive.google.com/drive/folders/1g2i0iYi3yDQOPN3M2i5YZtLaCeyMxsPm",
+      // link: "https://drive.google.com/drive/folders/1g2i0iYi3yDQOPN3M2i5YZtLaCeyMxsPm",
     },
     {
       id: 3,
-      src: rocksissorpaper
+      src: Grocery,
+      demo: "https://drive.google.com/drive/folders/1CYOsW4qEdZT-SElU1VlsAdLzSlj0DPCX",
+      link: "https://github.com/Sagar344Timalsina/SummerProject",
     },
-    {
-      id: 4,
-      src: navbar
-    },
-    {
-      id: 5,
-      src: reactSmooth
-    },
-    {
-      id: 6,
-      src: reactWeather
-    },
+   
   ];
 
 
@@ -55,7 +48,7 @@ const Portfolio = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
-            portfolios.map(({ id, src,demo,link }) => (
+            portfolios.map(({ id, src, demo, link }) => (
               <div key={id} className='shadow-md shadow-gray-800 rounded-lg'>
                 <img className='rounded-md duration-200 hover:scale-105' src={src} alt="" />
                 <div className='flex items-center justify-center '>
