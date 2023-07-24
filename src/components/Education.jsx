@@ -12,6 +12,7 @@ const Education = () => {
         { name: '4th Sem', GPA: 3.89 },
         { name: '5th Sem', GPA: 3.83 },
         { name: '6th Sem', GPA: 3.87 },
+        { name: '7th Sem', GPA: 3.89 }
     ]
 
     return (

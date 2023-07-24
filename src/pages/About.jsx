@@ -31,7 +31,7 @@ const About = () => {
                 <div  >
 
                     <button className='cursor-pointer text-white w-fit rounded-md px-6 my-8 py-4 flex items-center bg-gradient-to-r from-blue-500 via-blue-400 to-cyan-500 border border-spacing-1 '>
-                        <a href="/Sagar-Timalsina-cv.pdf"
+                        <a href="/SagarTimalsina-CV.pdf"
                             download={true}
                             target='_blank'
                             rel='noreferrer'
