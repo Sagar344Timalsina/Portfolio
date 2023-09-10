@@ -5,6 +5,7 @@ import git from "../assets/github.png";
 import python from "../assets/python.png";
 import php from "../assets/php.png";
 import mySQL from "../assets/mySQL.png";
+import MongoDB from "../assets/MongoDb.png";
 const BackEnd = () => {
   const backEnd = [
     {
@@ -46,6 +47,13 @@ const BackEnd = () => {
       src: mySQL,
       title: 'My SQL',
       style: 'shadow-orange-500'
+
+    },
+    {
+      id: 7,
+      src: MongoDB,
+      title: 'MongoDB',
+      style: 'shadow-green-600'
 
     },
   ]

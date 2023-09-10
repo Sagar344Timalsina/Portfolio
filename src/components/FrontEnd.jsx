@@ -4,6 +4,9 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import flutter from "../assets/flutter.png";
+import typescript from "../assets/typescript.png";
+import tailwind from "../assets/tailwind.png";
+import Nextjs from "../assets/nextjs.png";
 
 const FrontEnd = () => {
   const frontEnd = [
@@ -29,23 +32,37 @@ const FrontEnd = () => {
     },
     {
       id: 4,
+      src: typescript,
+      title: 'TypeScript',
+      style: 'shadow-blue-300'
+
+    },
+    {
+      id: 5,
       src: react,
       title: 'React',
       style: 'shadow-sky-500'
 
     },
-    // {
-    //   id: 5,
-    //   src: tailwind,
-    //   title: 'Tailwind CSS',
-    //   style: 'shadow-green-900'
-
-    // },
     {
-      id: 5,
+      id: 6,
+      src: Nextjs,
+      title: 'Next JS',
+      style: 'shadow-white'
+
+    },
+    {
+      id: 7,
+      src: tailwind,
+      title: 'Tailwind CSS',
+      style: 'shadow-green-700'
+
+    },
+    {
+      id: 8,
       src: flutter,
       title: 'Flutter ',
-      style: 'shadow-sky-400'
+      style: 'shadow-sky-500'
 
     },
   ]

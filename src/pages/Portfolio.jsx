@@ -1,5 +1,6 @@
 import React from 'react'
 import rocksissorpaper from '../assets/portfolio/RockSissorPaper.png';
+import ecommerce from '../assets/portfolio/ecommerce.png';
 
 import Flutter from '../assets/FlutterInside1.png';
 import Grocery from '../assets/GroceryEKhata.png';
@@ -10,18 +11,24 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      src: ecommerce,
+      demo: "https://frontend-store-five.vercel.app/",
+      link: "https://github.com/Sagar344Timalsina/frontend-assignment",
+    },
+    {
+      id: 2,
       src: rocksissorpaper,
       demo: "https://sagartimalsina-rockpapersissor.netlify.app/",
       link: "https://github.com/Sagar344Timalsina/RockPaperSissor",
     },
     {
-      id: 2,
+      id: 3,
       src: Flutter,
       demo: "https://drive.google.com/drive/folders/1g2i0iYi3yDQOPN3M2i5YZtLaCeyMxsPm",
       // link: "https://drive.google.com/drive/folders/1g2i0iYi3yDQOPN3M2i5YZtLaCeyMxsPm",
     },
     {
-      id: 3,
+      id: 4,
       src: Grocery,
       demo: "https://drive.google.com/drive/folders/1CYOsW4qEdZT-SElU1VlsAdLzSlj0DPCX",
       link: "https://github.com/Sagar344Timalsina/SummerProject",
